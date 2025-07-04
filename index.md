@@ -2,8 +2,6 @@
 layout: home
 ---
 
-# Welcome to My Blog
-
 Hi there! I'm Steffen Torpe Simonsen, and this is where I share my thoughts on things i find interesting. 
 
 ## What You'll Find Here
