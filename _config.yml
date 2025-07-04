@@ -7,14 +7,9 @@ url: "https://steffensimonsen.github.io"
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: jekyll-theme-cayman
 plugins:
   - jekyll-feed
-
-# Author info
-author:
-  name: Steffen Torpe Simonsen
-  email: Steffentorpe@gmail.com
 
 # Show excerpts on homepage
 show_excerpts: true
