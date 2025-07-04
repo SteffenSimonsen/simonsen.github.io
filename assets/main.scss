@@ -19,27 +19,41 @@
   background: linear-gradient(135deg, #000000 0%, #0f2027 50%, #203a43 100%) !important;
   color: white !important;
   
-  li.p-name {
+  .contact-list .p-name {
+    display: none !important;
+  }
+  
+  ul.contact-list li.p-name {
     display: none !important;
   }
 }
 
+
+.page-content {
+    position: relative;
+}
+
 #flowCanvas {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
     width: 100%;
     height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.wrapper {
+    position: relative;
+    z-index: 1;
 }
 
 body {
-    background: #0a0a0a;
     color: white;
 }
 
 .site-header {
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(10px);
 }
 
@@ -49,7 +63,7 @@ body {
 }
 
 .post-content, .home .post-list {
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(5px);
     border-radius: 10px;
     padding: 20px;
