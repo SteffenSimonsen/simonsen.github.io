@@ -18,4 +18,8 @@
 .site-footer {
   background: linear-gradient(135deg, #000000 0%, #0f2027 50%, #203a43 100%) !important;
   color: white !important;
+  
+  .contact-list .p-name {
+    display: none !important;
+  }
 }

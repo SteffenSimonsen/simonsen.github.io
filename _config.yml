@@ -14,3 +14,15 @@ plugins:
 # Show excerpts on homepage
 show_excerpts: true
 
+
+sass:
+  sass_dir: assets/css
+  style: compressed
+
+# Add custom CSS
+plugins:
+  - jekyll-feed
+
+# Include custom stylesheets
+head_scripts:
+  - assets/css/flow-field.css

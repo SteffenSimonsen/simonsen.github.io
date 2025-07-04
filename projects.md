@@ -4,15 +4,11 @@ title: Projects
 permalink: /projects/
 ---
 
-# My Projects
-
-Here are some of the projects I've been working on:
-
-## Deep Learning Projects
+## Deep Learning 
 
 Coming soon...
 
-## CyberSecurity Projects
+## CyberSecurity 
 
 Coming soon...
 
