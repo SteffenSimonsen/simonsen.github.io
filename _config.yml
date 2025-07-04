@@ -1,0 +1,21 @@
+title: Simonsen
+email: Steffentorpe@gmail.com
+description: >-
+  A blog about things i find interesting
+baseurl: ""
+url: "https://steffensimonsen.github.io"
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Author info
+author:
+  name: Steffen Torpe Simonsen
+  email: Steffentorpe@gmail.com
+
+# Show excerpts on homepage
+show_excerpts: true
+
