@@ -15,7 +15,8 @@ function resize() {
     rows = Math.floor(height / resolution);
     
     particles = [];
-    for (let i = 0; i < 200; i++) {
+    // no. of particles
+    for (let i = 0; i < 100; i++) {
         particles.push({
             x: Math.random() * width,
             y: Math.random() * height,
@@ -45,10 +46,12 @@ function updateParticles() {
         
         if (flowField[index] !== undefined) {
             const angle = flowField[index];
-            particle.vx += Math.cos(angle) * 0.05;
-            particle.vy += Math.sin(angle) * 0.05;
+            // acceleration multiplier, higher = faster
+            particle.vx += Math.cos(angle) * 0.01;
+            particle.vy += Math.sin(angle) * 0.01;
         }
         
+        // friction of particles
         particle.vx *= 0.995;
         particle.vy *= 0.995;
         
@@ -69,20 +72,20 @@ function updateParticles() {
 }
 
 function draw() {
-    ctx.fillStyle = 'rgba(10, 10, 10, 0.02)';
+    ctx.fillStyle = 'rgba(10, 10, 10, 0.02)'; // trail size
     ctx.fillRect(0, 0, width, height);
     
     particles.forEach(particle => {
         const alpha = particle.life / 300;
-        ctx.fillStyle = `rgba(100, 150, 255, ${alpha * 0.8})`;
+        ctx.fillStyle = `rgba(100, 150, 255, ${alpha * 0.8})`; // rgb values
         ctx.beginPath();
-        ctx.arc(particle.x, particle.y, 2, 0, Math.PI * 2);
+        ctx.arc(particle.x, particle.y, 4, 0, Math.PI * 2); // particles size
         ctx.fill();
     });
 }
 
 function animate() {
-    time++;
+    time++; // animation speed
     updateFlowField();
     updateParticles();
     draw();

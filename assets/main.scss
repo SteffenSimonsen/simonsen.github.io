@@ -69,3 +69,15 @@ body {
     padding: 20px;
     margin: 20px 0;
 }
+
+/* Hide RSS link from main content */
+.home .rss-subscribe {
+    display: none;
+}
+
+/* Add RSS link to footer */
+.footer-col-3::after {
+    content: "subscribe via RSS";
+    display: block;
+    margin-top: 10px;
+}
